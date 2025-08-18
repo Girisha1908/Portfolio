@@ -90,30 +90,8 @@ The objective was to develop a responsive web portfolio that effectively showcas
 - ✅ **Contact Integration**: Direct email and LinkedIn connectivity
 - ✅ **CV Download**: Integrated resume download functionality
 
-### Technical Achievements:
-- Fast loading times with optimized assets
-- SEO-friendly semantic HTML structure
-- Cross-browser compatibility
-- Mobile-first responsive design
-- Smooth user experience with CSS transitions
 
----
-
-## Conclusion
-
-The personal portfolio website successfully meets all initial objectives:
-
-1. **Professional Presentation**: Effectively showcases skills, experience, and projects
-2. **User Experience**: Intuitive navigation and responsive design across all devices
-3. **Functionality**: All interactive elements work as intended
-4. **Accessibility**: Clean code structure and semantic HTML for better accessibility
-5. **Maintainability**: Well-organized code structure for easy updates and modifications
-
-The portfolio serves as an effective tool for professional networking and job opportunities, providing potential employers with comprehensive information about skills and project experience.
-
----
-
-## Future Scope (Optional)
+To work on-
 
 ### Potential Enhancements:
 1. **Dynamic Content Management**
