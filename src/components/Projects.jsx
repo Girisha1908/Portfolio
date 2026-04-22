@@ -11,7 +11,7 @@ const projects = [
     tech: ['React', 'FastAPI', 'Python', 'PostgreSQL'],
     image: '/project-inventix.png',
     github: 'https://github.com/Girisha1908/Inventix-AI',
-    demo: 'https://docs.google.com/videos/d/1i5dXiG_SgZljBejRh_vqtxtg3yqISz84poYt0A_lSXM/edit?usp=sharing',
+    demo: 'https://drive.google.com/file/d/1NGtYq5AJLLrwn464NDIVdQKvuQnJ_l-t/view?usp=sharing',
   },
   {
     name: "COCO'S PLAYGROUND",
