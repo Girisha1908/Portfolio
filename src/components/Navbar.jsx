@@ -5,9 +5,9 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="fixed top-0 left-0 right-0 z-[100] px-6 py-8"
+      className="fixed top-0 left-0 right-0 z-[100]"
     >
-      <div className="container flex justify-between items-center bg-black/40 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/5">
+      <div className="nav bg-black/40 backdrop-blur-md rounded-2xl border border-white/5 mt-6 items-center">
         {/* Logo */}
         <a href="#hero" className="text-xl font-bold text-white tracking-tight">
           G<span className="text-blue-500">.</span>

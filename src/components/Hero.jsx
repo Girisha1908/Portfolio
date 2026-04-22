@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col pt-32 pb-10 overflow-hidden bg-black">
+    <section id="hero" className="hero bg-black overflow-hidden">
       {/* Background Video with stronger gradient mask */}
       <div className="absolute inset-0 z-0 pointer-events-none bg-black">
         <video
@@ -15,34 +15,31 @@ export default function Hero() {
         >
           <source src="/hero-bg-2.mp4" type="video/mp4" />
         </video>
-        {/* Stronger overlay to push background down and bring text to front */}
-        <div 
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.85))' }}
-        />
+        {/* Stronger overlay to separate text from background */}
+        <div className="hero-overlay" />
       </div>
 
-      <div className="relative z-10 container w-full flex-1 flex flex-col justify-center">
-        <div className="flex flex-col items-start translate-y-[-5%]">
+      <div className="relative z-10 container flex-1 flex flex-col justify-center">
+        <div className="hero-content">
           
           {/* Animated Headline Structure with dynamic rhythm */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col font-bold tracking-tighter w-full"
+            className="flex flex-col font-bold text-white tracking-tighter"
           >
             {/* Line 1 -> slightly smaller */}
-            <span className="text-[clamp(40px,7vw,80px)] leading-[1.1] text-white/90">
+            <span className="text-[clamp(40px,7vw,80px)] text-white/90">
               Building performant,
             </span>
             {/* Line 2 -> Focus line, larger, added spacing between words */}
-            <span className="text-[clamp(48px,9vw,110px)] leading-[1.1] my-1 md:my-0 text-white">
+            <span className="text-[clamp(48px,9vw,110px)] text-white">
               <span className="text-blue-500 mr-5 md:mr-8 inline-block">scalable</span>
               digital
             </span>
             {/* Line 3 -> same as line 1 */}
-            <span className="text-[clamp(40px,7vw,80px)] leading-[1.1] text-white/90">
+            <span className="text-[clamp(40px,7vw,80px)] text-white/90">
               experiences.
             </span>
           </motion.h1>
@@ -52,7 +49,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[16px] leading-[1.6] text-white/50 mt-8 max-w-3xl font-light tracking-wide"
+            className="text-[16px] leading-[1.6] text-white/50 font-light tracking-wide"
           >
             Full-stack developer focused on performance, scalability, and clean system design.
           </motion.p>
@@ -62,11 +59,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="flex flex-wrap gap-[16px] mt-12"
+            className="cta-group"
           >
             <a
               href="#projects"
-              className="px-[20px] py-[12px] bg-white text-black font-semibold text-[14px] rounded-[16px] hover:bg-white/90 transition-colors flex items-center justify-center cursor-pointer"
+              className="btn-primary hover:bg-white/90 shadow-[0_0_40px_rgba(255,255,255,0.15)] cursor-pointer"
             >
               View Projects
             </a>
@@ -74,17 +71,16 @@ export default function Hero() {
               href="/GIRISHA_RES.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-[20px] py-[12px] border border-white/30 text-white font-semibold text-[14px] rounded-[16px] hover:bg-white/10 transition-colors flex items-center justify-center cursor-pointer"
+              className="btn-secondary hover:bg-white/10 hover:border-white/40 cursor-pointer"
             >
               Resume
             </a>
           </motion.div>
-
         </div>
       </div>
 
       {/* Footer Info & Scroll Hint */}
-      <div className="relative z-10 container w-full flex justify-between items-end pb-4 border-t border-white/5 pt-8 mt-auto">
+      <div className="relative z-10 container flex justify-between items-end pb-4 border-t border-white/5 pt-8 mt-auto">
          <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 

@@ -37,28 +37,26 @@ const projects = [
   },
 ];
 
-function ProjectCard({ p, i }) {
+function ProjectCard({ p }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.1 }}
-      className="group flex flex-col lg:flex-row gap-8 mb-[100px] last:mb-0 p-6 md:p-8 rounded-2xl hover:-translate-y-1 hover:bg-white/[0.02] border border-transparent hover:border-white/5 transition-all duration-300 ease-out"
+      className="project-card group hover:-translate-y-1 hover:bg-white/[0.02] border border-transparent hover:border-white/5 transition-all duration-300 ease-out p-6 md:p-8 rounded-2xl"
     >
-      {/* Left Image (50%) */}
-      <div className="w-full lg:w-1/2 flex-shrink-0">
-        <div className="w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-md group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300">
-          <img
-            src={p.image}
-            alt={p.name}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-          />
-        </div>
+      {/* Left Image */}
+      <div className="w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-md group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex-shrink-0">
+        <img
+          src={p.image}
+          alt={p.name}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+        />
       </div>
 
-      {/* Right Info (50%) */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center">
+      {/* Right Info */}
+      <div className="flex flex-col justify-center">
         
         {/* Title */}
         <h3 className="text-[32px] md:text-[40px] font-bold text-white tracking-tight mb-4 leading-tight">
@@ -70,26 +68,23 @@ function ProjectCard({ p, i }) {
           {p.desc}
         </p>
 
-        {/* Tech Stack Pills (Low contrast) */}
+        {/* Tech Stack Pills via .tech-tag */}
         <div className="flex flex-wrap gap-[8px] mb-[40px]">
           {p.tech.map((t) => (
-            <span
-              key={t}
-              className="text-[12px] px-[10px] py-[4px] rounded-full font-medium bg-white/[0.05] text-white/40 tracking-wide border border-white/5"
-            >
+            <span key={t} className="tech-tag text-white/50 border border-white/5">
               {t}
             </span>
           ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap gap-[16px] mt-auto">
+        {/* Action Buttons via global classes */}
+        <div className="cta-group mt-auto">
           {p.demo && (
             <a
               href={p.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-[20px] py-[12px] bg-white text-black font-semibold text-[14px] rounded-[10px] hover:bg-white/90 hover:scale-[1.03] shadow-none hover:shadow-[0_8px_20px_rgba(255,255,255,0.15)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
+              className="btn-primary hover:bg-white/90 hover:scale-[1.03] shadow-none hover:shadow-[0_8px_20px_rgba(255,255,255,0.15)] flex gap-2 cursor-pointer"
             >
               Live Demo <ArrowUpRight size={16} />
             </a>
@@ -98,7 +93,7 @@ function ProjectCard({ p, i }) {
             href={p.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-[20px] py-[12px] border border-white/10 text-white font-semibold text-[14px] rounded-[10px] hover:bg-white/[0.03] hover:border-white/20 hover:scale-[1.03] shadow-none hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
+            className="btn-secondary hover:bg-white/[0.03] hover:border-white/20 hover:scale-[1.03] shadow-none hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)] flex gap-2 cursor-pointer"
           >
             <GithubIcon size={16} /> View Code
           </a>
@@ -110,19 +105,18 @@ function ProjectCard({ p, i }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-black py-[120px] border-t border-white/5">
+    <section id="projects" className="section bg-black border-t border-white/5">
       <div className="container">
         
-        {/* Section Heading */}
-        <div className="mb-[64px]">
+        <div className="section-title">
           <h2 className="text-[clamp(40px,6vw,56px)] font-bold text-white tracking-tight leading-[1.1]">
             Selected Projects
           </h2>
         </div>
 
-        <div className="flex flex-col">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.name} p={p} i={i} />
+        <div>
+          {projects.map((p) => (
+            <ProjectCard key={p.name} p={p} />
           ))}
         </div>
       </div>

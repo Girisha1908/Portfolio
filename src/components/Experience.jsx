@@ -13,10 +13,10 @@ const awards = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-black py-[120px] border-t border-white/5">
+    <section id="experience" className="section bg-black border-t border-white/5">
       <div className="container">
-        {/* Section Heading with 48px margin bottom */}
-        <div className="mb-[48px]">
+        {/* Section Heading */}
+        <div className="section-title">
           <h2 className="text-[clamp(40px,6vw,56px)] font-bold text-white tracking-tight leading-[1.1]">
             Experience & Awards
           </h2>
