@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
-import heroVideo from '../assets/hero-bg-2.mp4';
 
 export default function Hero() {
   return (
@@ -14,7 +13,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src="/hero-bg-2.mp4" type="video/mp4" />
         </video>
         {/* Stronger overlay to push background down and bring text to front */}
         <div 
