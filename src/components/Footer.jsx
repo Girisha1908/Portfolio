@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-black py-[80px] border-t border-white/5">
-      <div className="max-w-[1100px] mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-0">
+      <div className="container flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-0">
         
         {/* Left: Name and Tagline */}
         <div className="text-center md:text-left">

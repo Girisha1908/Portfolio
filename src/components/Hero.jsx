@@ -22,7 +22,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 w-full flex-1 flex flex-col justify-center">
+      <div className="relative z-10 container w-full flex-1 flex flex-col justify-center">
         <div className="flex flex-col items-start translate-y-[-5%]">
           
           {/* Animated Headline Structure with dynamic rhythm */}
@@ -84,7 +84,7 @@ export default function Hero() {
       </div>
 
       {/* Footer Info & Scroll Hint */}
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 w-full flex justify-between items-end pb-4 border-t border-white/5 pt-8 mt-auto">
+      <div className="relative z-10 container w-full flex justify-between items-end pb-4 border-t border-white/5 pt-8 mt-auto">
          <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 

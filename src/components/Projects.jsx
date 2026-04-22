@@ -111,7 +111,7 @@ function ProjectCard({ p, i }) {
 export default function Projects() {
   return (
     <section id="projects" className="bg-black py-[120px] border-t border-white/5">
-      <div className="max-w-[1100px] mx-auto px-6">
+      <div className="container">
         
         {/* Section Heading */}
         <div className="mb-[64px]">
