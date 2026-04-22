@@ -23,26 +23,30 @@ export default function Hero() {
         <div className="hero-content">
           
           {/* Animated Headline Structure with dynamic rhythm */}
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col font-bold text-white tracking-tighter"
           >
-            {/* Line 1 -> slightly smaller */}
-            <span className="text-[clamp(40px,7vw,80px)] text-white/90">
-              Building performant,
+            <span className="text-white/40 tracking-[0.2em] uppercase text-sm block mb-6 font-semibold">
+              Girisha Anamala
             </span>
-            {/* Line 2 -> Focus line, larger, added spacing between words */}
-            <span className="text-[clamp(48px,9vw,110px)] text-white">
-              <span className="text-blue-500 mr-5 md:mr-8 inline-block">scalable</span>
-              digital
-            </span>
-            {/* Line 3 -> same as line 1 */}
-            <span className="text-[clamp(40px,7vw,80px)] text-white/90">
-              experiences.
-            </span>
-          </motion.h1>
+            <h1 className="flex flex-col font-bold text-white tracking-tighter">
+              {/* Line 1 -> slightly smaller */}
+              <span className="text-[clamp(40px,7vw,80px)] text-white/90">
+                Building performant,
+              </span>
+              {/* Line 2 -> Focus line, larger, added spacing between words */}
+              <span className="text-[clamp(40px,7vw,80px)] text-white mt-1">
+                <span className="text-[clamp(48px,9vw,110px)] text-blue-500 mr-5 md:mr-8 inline-block">scalable</span>
+                digital
+              </span>
+              {/* Line 3 -> same as line 1 */}
+              <span className="text-[clamp(40px,7vw,80px)] text-white/90">
+                experiences.
+              </span>
+            </h1>
+          </motion.div>
 
           {/* Subheading to ground the claim */}
           <motion.p
