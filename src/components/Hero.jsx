@@ -71,7 +71,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href="/resume.pdf"
+              href="/GIRISHA_RES.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-[20px] py-[12px] border border-white/30 text-white font-semibold text-[14px] rounded-[16px] hover:bg-white/10 transition-colors flex items-center justify-center cursor-pointer"

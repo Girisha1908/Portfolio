@@ -30,7 +30,7 @@ export default function Navbar() {
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="/resume.pdf"
+            href="/GIRISHA_RES.pdf"
             target="_blank"
             className="text-white/60 hover:text-white transition-colors relative group"
           >
