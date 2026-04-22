@@ -5,9 +5,9 @@ import { GithubIcon } from './icons';
 const projects = [
   {
     name: 'INVENTIX AI',
-    desc: 'AI-powered research validation platform.',
-    problem: 'Researchers waste time on non-novel ideas',
-    solution: 'Detects novelty using evidence-based validation',
+    desc: 'Inventix AI is a comprehensive AI-powered research validation platform built to accelerate academic and enterprise R&D. By automatically ingesting the latest publications and cross-referencing proposed topics against a massive data context, it ensures teams only invest time in genuinely groundbreaking work.',
+    problem: 'Historically, researchers waste countless hours pursuing non-novel ideas due to fragmented literature and limited scope.',
+    solution: 'Detects novelty using strict evidence-based validation, radically streamlining research pipelines before redundant effort begins.',
     tech: ['React', 'FastAPI', 'Python', 'PostgreSQL'],
     image: '/project-inventix.png',
     github: 'https://github.com/Girisha1908/Inventix-AI',
@@ -15,9 +15,9 @@ const projects = [
   },
   {
     name: "COCO'S PLAYGROUND",
-    desc: 'Real-time collaborative code editor.',
-    problem: 'No lightweight editor supports real-time multi-user collaboration',
-    solution: 'WebSocket-based editor with live cursors and room management',
+    desc: "Coco's Playground is a real-time collaborative code editor designed to remove the friction from remote pair programming. Developers can spin up secure collaboration instances directly in the browser in seconds, allowing multiple contributors to edit, debug, and review code concurrently without the usual painful setup.",
+    problem: 'Traditional IDEs either lack seamless multiplayer capabilities or require heavy, resource-intensive local installations.',
+    solution: 'Utilizes a lightweight WebSocket-based architecture to provide instant cursor presence, live code synchronization, and robust room management.',
     tech: ['React', 'Node.js', 'Socket.io', 'Express'],
     image: '/project-coco.png',
     github: 'https://github.com/Girisha1908/Collaborative-Code-editor',
@@ -25,9 +25,9 @@ const projects = [
   },
   {
     name: 'TASKFLOW',
-    desc: 'Enterprise task management SaaS.',
-    problem: 'Teams lack a simple way to track tasks with role constraints',
-    solution: 'Full-featured SaaS with RBAC and instant Supabase syncing',
+    desc: 'Taskflow is an enterprise-grade task management SaaS engineered for strict organizational environments. It delivers the speed of a modern startup tool with the rigorous security posture required by massive enterprise compliance. Managers can distribute workloads confidently, knowing status updates push instantly.',
+    problem: 'Scaling teams consistently struggle with chaotic task tracking software that fails to enforce granular role-based access controls.',
+    solution: 'Implements a severe RBAC architecture paired with real-time Supabase syncing, keeping data visibility tightly regulated across clients.',
     tech: ['React', 'Supabase', 'Tailwind', 'PostgreSQL'],
     image: '/project-taskflow.png',
     github: 'https://github.com/Girisha1908/teamtask-flow',
@@ -35,9 +35,9 @@ const projects = [
   },
   {
     name: 'SAHAY',
-    desc: 'AI companion for elderly safety and navigation.',
-    problem: 'Elderly individuals lack accessible tools for emergencies',
-    solution: 'Voice navigation, fall detection, and one-tap SOS alerts',
+    desc: 'Sahay is an intelligent mobile companion application focused exclusively on elderly safety and accessible navigation. The platform empowers users with independence while drastically reducing response times when physical accidents or displacements occur in daily routine environments.',
+    problem: 'Elderly individuals often struggle with complex modern interfaces, making it critically difficult to signal for help safely during emergencies.',
+    solution: 'Replaces hurdles with an intuitive voice-driven interface equipped with passive AI-powered fall detection and one-tap SOS alerts.',
     tech: ['Kotlin', 'TensorFlow', 'Firebase', 'Android'],
     image: '/project-sahay.jpg',
     github: 'https://github.com/Girisha1908/HACKSRM',
@@ -67,24 +67,19 @@ function ProjectCard({ p }) {
       <div className="flex flex-col justify-center">
         
         {/* Title */}
-        <h3 className="text-[32px] md:text-[40px] font-bold text-white tracking-tight mb-4 leading-tight group-hover:text-blue-500 transition-colors duration-500">
+        <h3 className="text-[32px] md:text-[40px] font-bold text-white tracking-tight mb-8 leading-tight group-hover:text-blue-500 transition-colors duration-500">
           {p.name}
         </h3>
-        
-        {/* Short Desc */}
-        <p className="text-[16px] text-white/50 leading-[1.6] mb-6">
-          {p.desc}
-        </p>
 
-        {/* Problem / Solution fields */}
-        <div className="flex flex-col gap-4 mb-8">
+        {/* Problem / Solution fields - UN-CRAMPED */}
+        <div className="flex flex-col gap-8 mb-10">
           <div>
-            <span className="text-white/30 text-xs tracking-widest font-bold uppercase block mb-1">Problem:</span>
-            <p className="text-[15px] text-white/70 leading-[1.6]">{p.problem}</p>
+            <span className="text-white/30 text-[11px] tracking-[0.15em] font-bold uppercase block mb-2">Problem:</span>
+            <p className="text-[16px] text-white/70 leading-[1.7]">{p.problem}</p>
           </div>
           <div>
-            <span className="text-white/30 text-xs tracking-widest font-bold uppercase block mb-1">Solution:</span>
-            <p className="text-[15px] text-white/70 leading-[1.6]">{p.solution}</p>
+            <span className="text-white/30 text-[11px] tracking-[0.15em] font-bold uppercase block mb-2">Solution:</span>
+            <p className="text-[16px] text-white/70 leading-[1.7]">{p.solution}</p>
           </div>
         </div>
 
