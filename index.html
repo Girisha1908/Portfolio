@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Girisha Anamala · Portfolio</title>
+  <meta name="description" content="Girisha Anamala, CSE student at SRM University AP and full-stack product builder. Selected work, experience, and contact.">
+  <!-- Satoshi (Fontshare). If it can't load, the bundled Plus Jakarta Sans fallback is used. -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* play the multilingual intro once per session (add ?intro to force it) */
+    (function (d) {
+      var show = /[?&]intro\b/.test(location.search);
+      try { if (!sessionStorage.getItem("seenIntro")) show = true; } catch (e) { show = true; }
+      if (show) d.classList.add("intro");
+    })(document.documentElement);
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Girisha’s portfolio">
+    <div class="loader-inner">
+      <p class="loader-cmd" aria-hidden="true"><span class="loader-prompt">~/girisha $</span> <span id="loader-cmd">echo "hi"</span><span class="caret"></span></p>
+      <p class="loader-word" id="loader-word" lang="en">hi</p>
+      <p class="loader-lang" id="loader-lang" aria-hidden="true">english</p>
+      <ol class="loader-dots" id="loader-dots" aria-hidden="true"></ol>
+    </div>
+    <button type="button" class="loader-skip" id="loader-skip">skip intro</button>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Girisha, back to top">girisha<span>.</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <button type="button" class="nav-link-btn" data-page="o1">About</button>
+      <a class="nav-cta" href="#contact">Let’s talk ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <h1 id="hero-title" class="hero-title">
+          <span class="line">Hi, I’m Girisha.</span>
+          <span class="line">A full-stack builder</span>
+          <span class="line">with a <em>product mind.</em></span>
+        </h1>
+        <p class="hero-sub">CSE at SRM University, AP · Class of 2027 · I find broken workflows and ship the 0→1 fix.</p>
+        <p class="hero-actions">
+          <a class="hero-btn js-resume" href="assets/Girisha-Anamala-Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 20" aria-hidden="true" focusable="false"><path d="M2 1h8l4 4v14H2z"/><path d="M10 1v4h4"/><path d="M8 8v6M5.5 11.5 8 14l2.5-2.5"/></svg>download resume<span class="sr-only"> (PDF, opens in a new tab)</span></a>
+          <a class="hero-btn is-ghost" href="#work">see my work ↓</a>
+        </p>
+      </div>
+
+      <p class="graph-hint"><span class="hint-dot" aria-hidden="true"></span><code>git log --graph</code> each commit is a page from my story. pick one to open it.</p>
+
+      <div class="graph-wrap" id="graph-wrap">
+        <div class="graph" id="graph" role="group" aria-label="Portfolio sections, drawn as a git commit graph">
+          <div class="graph-grid" aria-hidden="true"></div>
+
+          <svg class="lanes" viewBox="0 0 930 300" aria-hidden="true" focusable="false">
+            <g class="lane-base">
+              <path class="lane lane-main" d="M14 140 C14 95 40 70 90 70 L855 70"/>
+              <path class="lane lane-feature" d="M14 140 C14 185 40 210 90 210 L855 210"/>
+            </g>
+            <g class="lane-hi" id="lane-hi"></g>
+            <circle class="root-dot" cx="14" cy="140" r="9"/>
+            <text class="branch-label" x="4" y="112" transform="rotate(-90 4 112)">main</text>
+            <text class="branch-label" x="4" y="168" text-anchor="end" transform="rotate(-90 4 168)">feature/portfolio</text>
+          </svg>
+
+          <div class="nodes">
+            <button class="node" data-node="p" data-page="p" style="--x:105;--y:0;--face:#ffb7d5;--base:#d94f8a" aria-label="Selected Work">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">P</span><span class="node-cap">feat: selected work</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="o1" data-page="o1" style="--x:255;--y:0;--face:#c8b6ff;--base:#7153c7" aria-label="About Me">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">O</span><span class="node-cap">docs: about me</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="r" data-page="r" style="--x:405;--y:0;--face:#b9f2df;--base:#2caa85" aria-label="Resume and Experience">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">R</span><span class="node-cap">chore: resume &amp; experience</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="t" data-page="t" style="--x:555;--y:0;--face:#ffd98e;--base:#d28a24" aria-label="Tech Stack">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">T</span><span class="node-cap">build: tech stack</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+
+            <button class="node" data-node="f" data-page="f" style="--x:30;--y:140;--face:#a9ddff;--base:#3886c9" aria-label="FOSS and Community">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">F</span><span class="node-cap">feat: foss &amp; community</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="o2" data-page="o2" style="--x:180;--y:140;--face:#f4b8ff;--base:#a34cbf" aria-label="Achievements">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">O</span><span class="node-cap">release: achievements</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="l" data-page="l" style="--x:330;--y:140;--face:#ffc3a0;--base:#d96c44" aria-label="Learning Log">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">L</span><span class="node-cap">test: learning log</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button class="node" data-node="i" data-page="i" style="--x:480;--y:140;--face:#c6d7ff;--base:#5a78c9" aria-label="Ink and Articles">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">I</span><span class="node-cap">docs: ink &amp; articles</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="node" data-node="o3" data-page="o3" style="--x:630;--y:140;--face:#ffe446;--base:#eab800" aria-label="Contact Me">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true"><span class="node-letter">O</span><span class="node-cap">ping: contact me</span></span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="node node-merge" data-node="merge" data-page="merge" style="--x:782;--y:0;--face:#c8ff48;--base:#7fb800" aria-label="Let’s talk">
+              <span class="node-base" aria-hidden="true"></span>
+              <span class="node-face" aria-hidden="true">
+                <svg class="merge-icon" viewBox="0 0 76 100" focusable="false">
+                  <path d="M22 18 V82"/>
+                  <path d="M56 36 C56 62 22 56 22 72"/>
+                  <circle cx="22" cy="16" r="10"/>
+                  <circle cx="56" cy="30" r="10"/>
+                  <circle cx="22" cy="84" r="10"/>
+                </svg>
+                <span class="merge-cmd">git merge</span>
+                <span class="merge-cap">LET’S TALK</span>
+              </span>
+              <span class="node-ring" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <span class="head-tag" id="head-tag" aria-hidden="true">HEAD →</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" id="marquee">
+      <p class="sr-only">Real problems. Shipped products. I find broken workflows and build the 0→1 fix, from PRD to production. Pick a commit.</p>
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-group"></div>
+        <div class="marquee-group"></div>
+      </div>
+      <p class="marquee-static" aria-hidden="true">Real problems. Shipped products. <b>//</b> I find broken workflows and build the 0→1 fix, from PRD to production. <b>//</b> Pick a commit.</p>
+    </div>
+
+    <!-- ================= WORK ================= -->
+    <div class="portfolio">
+      <header class="portfolio-heading" id="work">
+        <h2>Things I’ve built and shipped</h2>
+        <p>Real workflows, rebuilt as full-stack products, from the first PRD to the last deploy.</p>
+      </header>
+
+      <section class="collection" aria-label="Projects">
+        <div class="content">
+          <ul class="project-list" id="project-list"></ul>
+        </div>
+        <div class="archive" id="archive">
+          <div class="archive-stage">
+            <img class="box-back" src="assets/my-works-box.png" alt="" aria-hidden="true">
+            <div class="folder-deck" id="folder-deck"></div>
+            <img class="box-front" src="assets/my-works-box.png" alt="" aria-hidden="true">
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROCESS ================= -->
+      <section class="build-process" id="process" aria-labelledby="process-title">
+        <div class="process-head">
+          <h2 id="process-title">How I build</h2>
+          <p>Find the broken workflow. Spec it. Ship it, then keep shipping.</p>
+        </div>
+        <div class="process-frame">
+          <div class="process-surface">
+            <article class="process-card">
+              <span class="process-label">01 / DISCOVER</span>
+              <h3>Start where the work breaks.</h3>
+              <p>Talk to the people doing the job, map the current workflow, and write down exactly what slows them down.</p>
+              <span class="sticker sticker-1">Users before code.</span>
+            </article>
+            <svg class="process-arrow arrow-1" viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="M4 30 C18 6 38 6 52 20"/><path d="M44 12 L53 21 L42 25"/></svg>
+            <article class="process-card">
+              <span class="process-label">02 / SPEC &amp; BUILD</span>
+              <h3>Give the idea a spec to stand on.</h3>
+              <p>Turn findings into a PRD and roadmap, design the data model and APIs, and build the smallest version worth shipping.</p>
+              <span class="sticker sticker-2">PRD → MVP</span>
+            </article>
+            <svg class="process-arrow arrow-2" viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="M4 12 C18 34 38 34 52 20"/><path d="M42 15 L53 20 L45 29"/></svg>
+            <article class="process-card">
+              <span class="process-label">03 / SHIP &amp; ITERATE</span>
+              <h3>Ship it. Then make it better.</h3>
+              <p>Deploy early, add audit logs and analytics, gather feedback, and improve sprint by sprint.</p>
+              <span class="sticker sticker-3">git push → learn</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <h2 id="contact-title"><span>Let’s build</span> <span>something useful.</span></h2>
+        <div class="contact-body">
+          <p>Hiring for an internship, building something from 0→1, or running a hackathon that needs a hand? Say hi.</p>
+          <a class="contact-email js-email" href="mailto:anamalagirisha@gmail.com">anamalagirisha@gmail.com</a>
+          <p class="contact-links">
+            <a class="js-github" href="https://github.com/Girisha1908" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span> ↗</a>
+            <a class="js-linkedin" href="https://www.linkedin.com/in/girishaanamala/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> ↗</a>
+          </p>
+        </div>
+      </div>
+      <footer class="site-footer">© Girisha Anamala · built with care, versioned with git</footer>
+    </section>
+  </main>
+
+  <!-- Full-page commit viewer: every node, pill and folder opens here -->
+  <dialog class="page-view" id="page-view" aria-labelledby="pv-title">
+    <div class="pv-bar">
+      <button type="button" class="pv-branch" data-goto="#top" aria-label="Back to the home page" title="back to home"><span class="pv-dot" aria-hidden="true"></span><span class="pv-home" aria-hidden="true">↖</span><span id="pv-branch"></span> <span class="pv-sep" aria-hidden="true">·</span> <code id="pv-commit"></code></button>
+      <div class="pv-actions">
+        <button type="button" class="pv-btn" id="pv-prev" aria-label="Previous commit">←</button>
+        <button type="button" class="pv-btn" id="pv-next" aria-label="Next commit">→</button>
+        <button type="button" class="pv-btn pv-close" data-close aria-label="Close page">esc ×</button>
+      </div>
+    </div>
+    <div class="pv-scroll" id="pv-scroll">
+      <header class="pv-hero">
+        <span class="pv-bubble" id="pv-bubble" aria-hidden="true"></span>
+        <div class="pv-hero-text">
+          <p class="pv-eyebrow" id="pv-eyebrow"></p>
+          <h2 class="pv-title" id="pv-title" tabindex="-1"></h2>
+          <p class="pv-meta" id="pv-meta"></p>
+        </div>
+      </header>
+      <div class="pv-body" id="pv-body"></div>
+      <nav class="pv-foot" id="pv-foot" aria-label="More commits"></nav>
+    </div>
+  </dialog>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
