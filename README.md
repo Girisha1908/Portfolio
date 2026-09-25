@@ -2,12 +2,6 @@
 
 🌐 **Live Site**: [https://girishanamala.tech](https://girishanamala.tech)
 
-A static, dependency-free portfolio: commit-graph hero, Work archive box, build process, and contact.
-
-## Live Website
-
-Visit the portfolio live at [https://girishanamala.tech](https://girishanamala.tech).
-
 ## Run it Locally
 
 Open `index.html` in a browser, or serve the folder:
