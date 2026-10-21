@@ -32,6 +32,26 @@ New public repos appear automatically in "Fresh from GitHub" (Work section and t
 - The hand-written projects are skipped automatically, so nothing appears twice.
 - Results are cached in the visitor's browser for an hour. If GitHub can't be reached, the section stays hidden.
 
+### Learning Log & Articles (Obsidian)
+
+The learning log and ink & articles pages are written in Obsidian. `notes/` is an Obsidian vault:
+
+```
+notes/
+  learning-log/   one note per entry (type: now | done | til)
+  ink/            one note per article (the note body is the article)
+  media/          images (pasted images land here automatically)
+  templates/      "learning-log" and "article" templates
+```
+
+- Only notes with `published: true` go on the site. Unpublished articles show as "draft · coming soon" (add `hidden: true` to hide one completely, and `order: 1`, `2`… to sort them).
+- Obsidian extras that work: `[[links]]` between articles, `![[pasted images]]`, `==highlights==`, `> [!tip]` callouts, tables, code blocks, `%% comments %%` (stripped).
+- On every push, the GitHub Action (`.github/workflows/deploy.yml`) runs `scripts/build-notes.mjs`, which turns the vault into `data/notes.json` + `data/media/`, and deploys the site. The vault itself is not published to the site.
+- Preview locally: `npm install` once, then `npm run notes` and serve the folder.
+- Articles have shareable links: `https://girishanamala.tech/#ink/<file-name>`.
+
+> The repo is public, so unpublished drafts in `notes/` can still be read on GitHub. Keep private drafts in another vault until they're ready.
+
 ### Intro Loader
 
 Plays once per browser session ("hi" in each language, then "hi, i'm girisha."). Add `?intro` to the URL to replay it. Skip with the button, Esc, Enter or Space. Reduced-motion users get a short static version.
@@ -43,11 +63,15 @@ index.html          markup (hero graph nodes, sections, dialogs)
 css/styles.css      all styles, one source of truth per component
 js/content.js       PROFILE — all copy and links
 js/main.js          graph scaling + replay, marquee, dialogs, archive box
-assets/             my-works-box.png, resume, bundled fonts
+assets/             my-works-box.png, resume, certificates, photos, bundled fonts
+notes/              Obsidian vault: learning log + articles (not published as-is)
+scripts/            build-notes.mjs: vault → data/notes.json
+data/               generated notes.json + media (rebuilt on every deploy)
+.github/workflows/  deploy.yml: build notes + deploy to GitHub Pages
 ```
 
 ## Fonts
 
-Inter, JetBrains Mono and Instrument Serif are bundled in `assets/fonts`. Satoshi loads from Fontshare; if it's unavailable, a bundled Plus Jakarta Sans fallback is used.
+Inter, JetBrains Mono, Noto Sans Devanagari/Telugu and a Plus Jakarta Sans fallback are bundled in `assets/fonts`. Satoshi loads from Fontshare; if it's unavailable, Plus Jakarta Sans is used.
 
 Design inspired by ui.debbie's portfolio prompts.

@@ -1,0 +1,72 @@
+{
+  "generated": "2026-10-21T18:35:34.027Z",
+  "learning": [
+    {
+      "title": "my outbound gtm strategy framework",
+      "group": "now",
+      "type": "now",
+      "date": "2026-10-22",
+      "status": "in progress",
+      "link": "",
+      "tags": [
+        "gtm",
+        "outbound",
+        "strategy"
+      ],
+      "html": ""
+    },
+    {
+      "title": "red hat system administration ii (rh134)",
+      "group": "done",
+      "type": "done",
+      "date": "2025-11-20",
+      "status": "completed · 40 credit hours",
+      "link": "assets/certificates/red-hat-rh134-system-administration-ii.pdf",
+      "tags": [
+        "linux",
+        "red hat"
+      ],
+      "html": ""
+    },
+    {
+      "title": "full stack web development summer internship",
+      "group": "done",
+      "type": "done",
+      "date": "2025-07",
+      "status": "completed",
+      "link": "",
+      "tags": [
+        "react",
+        "node.js",
+        "socket.io"
+      ],
+      "html": "<p>built coco&#39;s playground, a real-time collaborative code editor, as the capstone project.</p>"
+    }
+  ],
+  "ink": [
+    {
+      "slug": "what-actually-happens-behind-a-rest-api",
+      "title": "what actually happens behind a rest api",
+      "draft": true,
+      "order": 1
+    },
+    {
+      "slug": "what-building-a-community-taught-me-about-leadership",
+      "title": "what building a community taught me about leadership",
+      "draft": true,
+      "order": 2
+    },
+    {
+      "slug": "why-authentication-isnt-just-a-login-screen",
+      "title": "why authentication isn’t just a login screen",
+      "draft": true,
+      "order": 3
+    },
+    {
+      "slug": "the-art-of-negotiation",
+      "title": "the art of negotiation",
+      "draft": true,
+      "order": 4
+    }
+  ]
+}

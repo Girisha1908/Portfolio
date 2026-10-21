@@ -1,0 +1,11 @@
+{
+  "name": "girisha-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "notes": "node scripts/build-notes.mjs"
+  },
+  "devDependencies": {
+    "marked": "^14.1.4"
+  }
+}

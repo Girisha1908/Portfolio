@@ -17,7 +17,9 @@
      { cards: [{ tag, t, meta, lines, rows, chips, image }] }  cards
      { meta: "…" }                          small mono line
      { projects: true }                     all project stories
-     { articles: [...] }                    blog index
+     { articles: [...] }                    blog index (static)
+     { learning: true, fallback }           learning log from the Obsidian vault (notes/learning-log)
+     { ink: true, fallback: [...] }         articles from the Obsidian vault (notes/ink)
      { contact: true }                      contact buttons
      { photo: { src, alt, caption } }       image with caption
      { sign: "name" }                       signature
@@ -174,7 +176,7 @@ window.PROFILE = {
       branch: "feature/portfolio", commit: "test: learning log",
       title: "learning log",
       blocks: [
-        { soon: "certifications are being added." }
+        { learning: true, fallback: "certifications are being added." }   // entries come from notes/learning-log in the Obsidian vault
       ]
     },
 
@@ -185,15 +187,12 @@ window.PROFILE = {
       blocks: [
         { lead: "i write when i understand something well enough to explain it to someone else." },
         { h: "things i learned while building" },
-        { articles: [
-          { title: "why authentication isn’t just a login screen", url: "" },
+        { ink: true, fallback: [
           { title: "what actually happens behind a rest api", url: "" },
-          { title: "lessons from building role-based systems", url: "" },
-          { title: "what breaks when real-time systems meet real users", url: "" },
-          { title: "things i wish i knew before building my first full-stack project", url: "" },
-          { title: "cybersecurity lessons from actually touching systems", url: "" },
-          { title: "what building with a community taught me about engineering", url: "" }
-        ] },
+          { title: "what building a community taught me about leadership", url: "" },
+          { title: "why authentication isn’t just a login screen", url: "" },
+          { title: "the art of negotiation", url: "" }
+        ] },   // posts come from notes/ink in the Obsidian vault; this list shows only if that fails
       ]
     },
 

@@ -5,3 +5,10 @@ server.ps1
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Build tooling
+node_modules/
+# Obsidian per-device state
+notes/.obsidian/workspace*.json
+notes/.obsidian/cache
+notes/.trash/

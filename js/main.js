@@ -256,7 +256,47 @@
       </div>
     </article>`;
 
+  /* ---------- Obsidian notes (built into data/notes.json by scripts/build-notes.mjs) ---------- */
+  let NOTES = null;
+  const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+  const fmtDate = d => {
+    const m = String(d || "").match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
+    return m ? `${m[3] ? Number(m[3]) + " " : ""}${MONTHS[Number(m[2]) - 1]} ${m[1]}` : String(d || "");
+  };
+  const posts = () => (NOTES?.ink || []).filter(p => !p.draft);
+  const postBy = key => posts().find(p => `post:${p.slug}` === key);
+  const llItem = x => `
+    <li class="ll-item ll-${x.group}">
+      <span class="ll-dot" aria-hidden="true"></span>
+      <div class="ll-body">
+        <p class="ll-meta">${esc([fmtDate(x.date), x.status].filter(Boolean).join(" · "))}</p>
+        <h4>${esc(x.title)}</h4>
+        ${x.html ? `<div class="ll-note prose">${x.html}</div>` : ""}
+        ${x.tags.length || x.link ? `<p class="ll-foot">${x.tags.map(t => `<span class="ll-tag">${esc(t)}</span>`).join("")}${x.link ? (/^https?:/.test(x.link) ? extLink(x.link, "link") : docLink({ url: x.link, label: "certificate (pdf)" })) : ""}</p>` : ""}
+      </div>
+    </li>`;
+
   const BLOCK = {
+    learning: b => {
+      const L = NOTES?.learning || [];
+      if (!L.length) return `<p class="soon">${esc(b.fallback || "")}</p>`;
+      return [["now", "now learning"], ["done", "completed"], ["til", "today i learned"]].map(([g, label]) => {
+        const items = L.filter(x => x.group === g);
+        return items.length ? `<h3 class="b-h">${label}</h3><ol class="ll-list">${items.map(llItem).join("")}</ol>` : "";
+      }).join("");
+    },
+    ink: b => {
+      const list = NOTES?.ink;
+      if (!list?.length) return BLOCK.articles({ articles: b.fallback || [] });
+      return `<ol class="b-articles">${list.map((p, i) => p.draft ? `
+        <li class="is-draft"><span class="art-num">${num(i)}</span><span class="art-title">${esc(p.title)}</span><span class="art-status">draft · coming soon</span></li>` : `
+        <li class="is-post">
+          <span class="art-num">${num(i)}</span>
+          <button type="button" class="art-title art-open" data-open="post:${esc(p.slug)}">${esc(p.title)}</button>
+          <span class="art-status is-live">${esc(fmtDate(p.date))} · ${p.minutes} min</span>
+          ${p.summary ? `<p class="art-summary">${esc(p.summary)}</p>` : ""}
+        </li>`).join("")}</ol>`;
+    },
     lead: b => `<p class="b-lead">${esc(b.lead)}</p>`,
     p: b => `<p class="b-p">${esc(b.p)}</p>`,
     lines: b => `<p class="b-lines">${b.lines.map(l => `<span>${esc(l)}</span>`).join("")}</p>`,
@@ -358,6 +398,16 @@
   };
   loadGithub();
 
+  fetch("data/notes.json", { cache: "no-cache" })
+    .then(r => (r.ok ? r.json() : null))
+    .then(d => {
+      NOTES = d;
+      const m = location.hash.match(/^#ink\/([\w-]+)/);
+      if (m && postBy(`post:${m[1]}`)) openPage(`post:${m[1]}`, null);
+      else if (view.open && (current === "l" || current === "i")) fill(current); // refresh if already open
+    })
+    .catch(() => { /* no notes yet: pages fall back to their static content */ });
+
   /* =========================================================
      Full-page viewer
      ========================================================= */
@@ -366,9 +416,11 @@
   const scroller = $("#pv-scroll");
   let current = null, lastTrigger = null, skipFocusReturn = false, closing = false;
 
-  const pageList = key => key.startsWith("project:") ? P.projects.map(p => `project:${p.id}`) : ORDER;
+  const pageList = key => key.startsWith("project:") ? P.projects.map(p => `project:${p.id}`)
+    : key.startsWith("post:") ? posts().map(p => `post:${p.slug}`) : ORDER;
   const labelFor = key => {
     if (key.startsWith("project:")) { const p = P.projects.find(x => `project:${x.id}` === key); return p.name.toLowerCase(); }
+    if (key.startsWith("post:")) return postBy(key)?.title || "";
     return P.pages[key].commit;
   };
 
@@ -383,6 +435,18 @@
       bubble = num(i); branch = "main"; commit = `repo ${num(i)} · ${p.commit}`;
       eyebrow = p.kicker; title = p.name.toLowerCase(); meta = p.tagline.toLowerCase();
       body = story(p, i, true);
+    } else if (key.startsWith("post:")) {
+      const p = postBy(key);
+      const n = nodeEl("i");
+      face = n.style.getPropertyValue("--face"); base = n.style.getPropertyValue("--base");
+      bubble = "I"; branch = "main"; commit = `docs: ${p.slug}`;
+      eyebrow = [fmtDate(p.date), `${p.minutes} min read`].filter(Boolean).join(" · ");
+      title = p.title; meta = p.tags.map(x => `#${x}`).join("  ");
+      body = `${p.summary ? `<p class="b-lead">${esc(p.summary)}</p>` : ""}
+        ${p.cover ? `<img class="post-cover" src="${esc(p.cover)}" alt="">` : ""}
+        <article class="prose">${p.html}</article>
+        <p><button type="button" class="b-cta" data-open="i">← all articles</button></p>`;
+      view.classList.add("is-blog");
     } else {
       const pg = P.pages[key];
       const n = nodeEl(key);
@@ -416,6 +480,12 @@
       ${prev ? `<button type="button" class="pv-foot-btn" data-open="${prev}"><span>← previous</span><code>${esc(labelFor(prev))}</code></button>` : "<span></span>"}
       ${next ? `<button type="button" class="pv-foot-btn is-next" data-open="${next}"><span>next →</span><code>${esc(labelFor(next))}</code></button>` : `<button type="button" class="pv-foot-btn is-next" data-close><span>back to</span><code>the graph</code></button>`}`;
     scroller.scrollTop = 0;
+    syncHash(key);
+  };
+  const syncHash = key => {
+    const want = key && key.startsWith("post:") ? `#ink/${key.slice(5)}` : "";
+    if (want && location.hash !== want) history.replaceState(null, "", want);
+    else if (!want && location.hash.startsWith("#ink/")) history.replaceState(null, "", location.pathname + location.search);
   };
 
   const originOf = el => {
@@ -432,7 +502,7 @@
   };
 
   const openPage = (key, trigger) => {
-    if (!key.startsWith("project:") && !P.pages[key]) return;
+    if (key.startsWith("post:") ? !postBy(key) : (!key.startsWith("project:") && !P.pages[key])) return;
     fill(key);
     lastTrigger = trigger || document.activeElement;
     pause("page");
@@ -448,6 +518,7 @@
   };
   view.addEventListener("cancel", e => { e.preventDefault(); closePage(); });
   view.addEventListener("close", () => {
+    syncHash(null);
     html.classList.remove("modal-open");
     if (!skipFocusReturn && lastTrigger && document.contains(lastTrigger)) lastTrigger.focus({ preventScroll: true });
     skipFocusReturn = false;
@@ -466,6 +537,8 @@
     const inView = view.contains(e.target);
     const closeBtn = e.target.closest("[data-close]");
     if (closeBtn && inView) return closePage();
+    const postLink = e.target.closest('a[href^="#ink/"]');
+    if (postLink) { e.preventDefault(); const k = `post:${postLink.getAttribute("href").slice(5)}`; if (inView && postBy(k)) { fill(k); $("#pv-title").focus({ preventScroll: true }); } else openPage(k, postLink); return; }
     const openBtn = e.target.closest("[data-open]");
     if (openBtn && inView) { fill(openBtn.dataset.open); $("#pv-title").focus({ preventScroll: true }); return; }
     const pageT = e.target.closest("[data-page]");
