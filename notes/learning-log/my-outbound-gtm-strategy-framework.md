@@ -11,6 +11,8 @@ published: true
 ---
 The framework that I usually follow for designing an outbound gtm strategy for a B2B product starts with Research.
 
+# Company research
+
 1. company and market analysis
 	1. identify the core products and services
 	2. revenue model
@@ -32,3 +34,18 @@ The framework that I usually follow for designing an outbound gtm strategy for a
 4. competitive intelligence
 	1. direct competitors( vendor/pricing model/positioning/strengths vs yours)
 	2. indirect competitors/ alternatives (why buyers choose it?/ threat level)
+	3. gaps and whitespaces
+	4. win/loss table
+	   
+5. GTM challenges
+	1. ,
+	2. .
+	3. .
+	4. .
+
+# Product evaluation
+
+To understand how does the market perceive your product it's done by asking 3 crucial Questions.
+
+1. is your product market hyper-saturated with competing outreach
+2. is it a demand capturing product(where the need already exists, urgency can't be ) or a demand generation product?
