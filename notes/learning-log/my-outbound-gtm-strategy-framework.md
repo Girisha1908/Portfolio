@@ -25,4 +25,5 @@ The framework that I usually follow for designing an outbound gtm strategy for a
 
 3. value proposition analysis
 	1. strongest value story? with supported fact
-	2. 
+	2. identify pain
+	3. 
