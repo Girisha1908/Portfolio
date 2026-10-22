@@ -26,11 +26,12 @@ published: false
 
 ----------------------------------------------------------------
 
-### Part I: The Foundation 
+# Part I: The Foundation 
 
 The framework that I usually follow for designing an outbound GTM strategy for a B2B product starts with Research.
 
-# Company research
+## Chapter 1: R&D
+### Company research
 
 1. company and market analysis
 	1. identify the core products and services
@@ -62,7 +63,7 @@ The framework that I usually follow for designing an outbound GTM strategy for a
 	3. .
 	4. .
 
-# Product evaluation
+### Product evaluation
 
 To understand how the market perceives your product it's done by asking 3 crucial Questions.
 
@@ -73,3 +74,16 @@ To understand how the market perceives your product it's done by asking 3 crucia
    **demand generation product** ? (clients don't exactly know what they need but unanimously agree to the outcome(better revenue, better reach, saved time) it can be a unique saas
    
 3. how differentiated is your solution? (if you are one of the 20 companies doing what you do, your product will sell itself- outbound isn't necessary)
+
+### Market Evaluation
+
+1. is your market saturated?- (ex: e-commerce, agency services)
+		you'll need a more compelling offer, shorter email and sharp differentiator
+		Because your email would be competing with a dozen of other in the same inbox daily (fighting for attention)
+
+2. is your market unsaturated? (ex: niche manufacturing, specialized services)
+		you get the liberty of slightly longer length and can lean harder on the strengths of the offer itself.
+		Because the prospect isn't desensitized.
+
+
+## Chapter 
