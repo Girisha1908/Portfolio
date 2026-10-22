@@ -14,23 +14,18 @@ Negotiation is often misunderstood as a battleground where one party must win ov
 
 ## Negotiation in the Modern Era
 
-Today’s challenges demand cooperation, innovation, and mutual respect.  Instead of driving hard bargains, successful negotiators strive to understand interests deeply and craft solutions beneficial to all parties involved.
-
-A purely distributive mindset\_that is when you try to extract the most from the other side, might win you the deal but lose you the relationship. True negotiation isn’t about demanding your share; it’s about designing an outcome where both sides leave stronger. This is what separates the short-term closers from the long-term leaders. The most successful negotiators know this-
+ True negotiation isn’t about demanding your share; it’s about designing an outcome where both sides leave stronger. This is what separates the short-term closers from the long-term leaders. The most successful negotiators know this-
 
 “**Collaboration outperforms competition in the long run.”**
 
 When both sides walk away feeling respected, heard, and rewarded, that is called sustainable success.
 
-## The Psychology Behind Effective Negotiation
-
-Great negotiators are skilled listeners and empathetic communicators. They build rapport before discussing terms, focusing on understanding the motivations and needs of their counterparts. Collaborative or interest-based negotiation always seeks win-win outcomes.
 
 ## The Flow of a Smart Negotiation
 
 ### 1\. Develop a Premise Before Jumping to the Demand
 
-Every effective negotiation begins with a narrative not a number. Before asking for what you want, set the context for *why it matters* to both sides.
+Before asking for what you want, set the context for *why it matters* to both sides.
 
 **Example:**
 
@@ -40,13 +35,11 @@ Instead of starting with- “We want top-shelf placement in 200 stores, start wi
 
 When you lead with *shared opportunity*, you invite collaboration.
 
-A premise builds relevance. It turns a demand into a dialogue.
-
 ## 2\. Present Your Proposal
 
-Once the narrative is set- present your proposal and support it with persuasion. Donʼt just state what you want, explain why itʼs logical and ask questions that reveal your counterpart's priorities. The aim is not to give an ultimatum but to offer a framework.
+Once the narrative is set- present your proposal and support it with persuasion. Explain what you want, why itʼs logical and ask questions that reveal your counterpart's priorities. The aim is not to give an ultimatum but to offer a framework.
 
-At this stage if you are the counterpart the smartest move to negotiate is what I call diagnostic questioning. Questions designed not to challenge, but to *understand*. Diagnostic questions uncover what truly drives the other party. Maybe it can be volume, brand visibility, or logistics support being attentive and listening strategically can help you shape your offer around it.
+At this stage if you are the counterpart the smartest move to negotiate is what I call **diagnostic questioning**. Questions designed not to challenge, but to *understand*. Diagnostic questions uncover what truly drives the other party. Maybe it can be volume, brand visibility, or logistics support being attentive and listening strategically can help you shape your offer around it.
 
 ## 3\. Be Ready to Face the Initial Pushback
 
@@ -57,8 +50,6 @@ The initial “Noˮ is not rejection but information. It tells you where the bou
 Professionals who take “Noˮ personally lose their composure. Rather expecting a initial rejection can help you design a better deal.
 
 The key here is emotional regulation. Staying calm but persistent enough to explore other possibilities and zones of negotiation is the key.
-
-You must learn to see resistance not as a dead end but as the beginning of understanding.
 
 ## 4\. Redirect, Don’t Resist
 
