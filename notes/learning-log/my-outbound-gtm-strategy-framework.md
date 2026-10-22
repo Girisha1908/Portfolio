@@ -7,8 +7,27 @@ tags:
   - gtm
   - outbound
   - strategy
-published: true
+published: false
 ---
+### Part I: The Foundation 
+	● Chapter 1: Research & Development
+	● Chapter 2: ICP Definition, TAM Mapping & Strategy Development
+	● Chapter 3: Offer Creation: The Highest Leverage Variable
+### Part II: The Messaging 
+	● Chapter 4: The Psychology & Principles of Cold Email Messaging
+	● Chapter 5: Cold Email Script Frameworks & Messaging Angles
+### Part III: The Engine 
+	● Chapter 6: Infrastructure 
+	● Chapter 7: List Building: The Fuel to Your Campaigns 
+### Part IV: The Execution
+	● Chapter 8: Campaign Execution
+	● Chapter 9: Campaign Management, Optimization & Playbooks
+	● Sales Process
+
+----------------------------------------------------------------
+
+### Part I: The Foundation 
+
 The framework that I usually follow for designing an outbound GTM strategy for a B2B product starts with Research.
 
 # Company research
@@ -45,7 +64,7 @@ The framework that I usually follow for designing an outbound GTM strategy for a
 
 # Product evaluation
 
-To understand how does the market perceive your product it's done by asking 3 crucial Questions.
+To understand how the market perceives your product it's done by asking 3 crucial Questions.
 
 1. is your product market hyper-saturated with competing outreach?
    
