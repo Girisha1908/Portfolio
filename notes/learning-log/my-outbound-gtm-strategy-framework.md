@@ -86,4 +86,4 @@ To understand how the market perceives your product it's done by asking 3 crucia
 		Because the prospect isn't desensitized.
 
 
-## Chapter 
+## Chapter 2: ICP Definition
