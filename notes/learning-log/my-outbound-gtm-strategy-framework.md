@@ -58,7 +58,7 @@ The framework that I usually follow for designing an outbound GTM strategy for a
 	4. win/loss table
 	   
 5. GTM challenges
-	1. ,
+	1. .
 	2. .
 	3. .
 	4. .
@@ -87,3 +87,9 @@ To understand how the market perceives your product it's done by asking 3 crucia
 
 
 ## Chapter 2: ICP Definition
+
+ideal customer profile is not an e-commerce brand or SaaS company- those are markets. ICP means the detailed definition of a company and the exact persona within that company who is willing to buy your product and become a best customer.
+
+##### Traits of a best customer
+
+
