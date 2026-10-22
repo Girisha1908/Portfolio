@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"2bc8b2886afb9c11","x":-201,"y":-787,"width":250,"height":60,"type":"text","text":""},
+		{"id":"80c3976ddd291f6b","x":-927,"y":-196,"width":250,"height":60,"type":"text","text":"Research and development"},
+		{"id":"14bb8e4af30ed0bd","type":"text","text":"","x":-1040,"y":-536,"width":540,"height":340},
+		{"id":"8ae4e3273edde7ef","x":-460,"y":-720,"width":1140,"height":278,"type":"text","text":""}
+	],
+	"edges":[]
+}
