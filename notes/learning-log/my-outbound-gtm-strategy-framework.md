@@ -25,5 +25,10 @@ The framework that I usually follow for designing an outbound gtm strategy for a
 
 3. value proposition analysis
 	1. strongest value story? with supported fact
-	2. identify pain
-	3. 
+	2. identify pain points of each segment and value offered by company
+	3. funnel company optimizes
+	4. competitive advantage
+	   
+4. competitive intelligence
+	1. direct competitors( vendor/pricing model/positioning/strengths vs yours)
+	2. indirect competitors/ alternatives (why buyers choose it?/ threat level)
