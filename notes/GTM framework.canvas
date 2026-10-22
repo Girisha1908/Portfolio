@@ -1,9 +1,15 @@
 {
 	"nodes":[
-		{"id":"2bc8b2886afb9c11","x":-201,"y":-787,"width":250,"height":60,"type":"text","text":""},
-		{"id":"80c3976ddd291f6b","x":-927,"y":-196,"width":250,"height":60,"type":"text","text":"Research and development"},
+		{"id":"80c3976ddd291f6b","x":-927,"y":-196,"width":250,"height":60,"color":"1","type":"text","text":"Research and development"},
 		{"id":"14bb8e4af30ed0bd","type":"text","text":"","x":-1040,"y":-536,"width":540,"height":340},
-		{"id":"8ae4e3273edde7ef","x":-460,"y":-720,"width":1140,"height":278,"type":"text","text":""}
+		{"id":"8ae4e3273edde7ef","x":-460,"y":-720,"width":1140,"height":278,"type":"text","text":""},
+		{"id":"2bc8b2886afb9c11","x":-100,"y":-780,"width":250,"height":60,"color":"1","type":"text","text":"List building"},
+		{"id":"6e2df8625c63ef73","x":-420,"y":-240,"width":780,"height":286,"type":"text","text":""},
+		{"id":"3e401bd3e1979404","x":-338,"y":-306,"width":250,"height":60,"color":"1","type":"text","text":"Messaging"},
+		{"id":"5edcb5012e8422e8","x":760,"y":-720,"width":660,"height":766,"type":"text","text":""},
+		{"id":"7e65847dae1f275b","x":750,"y":-804,"width":250,"height":60,"color":"1","type":"text","text":"Automated Outbound motion"},
+		{"id":"003618a3b1bbff6c","x":420,"y":-247,"width":275,"height":293,"type":"text","text":""},
+		{"id":"9f8399a30d48c723","x":420,"y":-307,"width":250,"height":60,"color":"1","type":"text","text":"Email Orchestration"}
 	],
 	"edges":[]
 }
