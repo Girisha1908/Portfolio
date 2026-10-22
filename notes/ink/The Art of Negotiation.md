@@ -82,4 +82,6 @@ This signals commitment, discipline, and accountability.
 
 When both sides leave, knowing exactly *what happens next*, momentum is preserved.
 
+# Negotiation Tactics you Should Know
 
+This part of the blog explores the structure of effective negotiation. To bring these ideas to life, we will follow an example.
