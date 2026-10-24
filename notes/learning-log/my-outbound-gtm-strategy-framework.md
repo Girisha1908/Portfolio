@@ -92,6 +92,16 @@ ideal customer profile is not an e-commerce brand or SaaS company- those are mar
 
 ICP means the **detailed definition of a company** and the **exact persona within that company** who is willing to buy your product and become a best customer.
 
-##### Traits of a best customer
+##### Traits of a best customer(5 ESSENTIALS)
 
+1. know what team structure do they have?
+   
+	What's the ideal team structure that makes them most likely to be a good client and more likely to show buying signals.
+	
+	**How it proves best fit:** It provides proof of **operational capacity and need**. If an organization does not have the departments or team size required to implement, manage, or derive ROI from your solution.
+	
+	They cannot succeed with your offer. Matching this structure proves they have the exact internal infrastructure capable of adopting and using your product.
 
+1. identify Buying Signals
+
+	
