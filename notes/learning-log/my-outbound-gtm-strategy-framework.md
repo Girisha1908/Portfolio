@@ -106,8 +106,23 @@ ICP means the **detailed definition of a company** and the **exact persona withi
 
 	try to gauge what situation your client is facing when they come to buy your product.
 	
-- **What it is:** Internal triggering events, such as active hiring, headcount reduction, or recent funding rounds.
+-  Are they hiring?
+- Losing employees? 
+- Just raised funding? 
+- What's happening within their company that creates the need?
     
 - **How it proves best fit:** It provides proof of **active urgency and timing**. Many companies fit demographic criteria on paper but are in maintenance mode and will not buy.
   
-  Identifying these signals proves the prospect is facing the specific  friction that forces budget allocation and creates an immediate need to solve the problem today.
+  Identifying these signals proves the prospect is facing the specific friction that forces budget allocation and creates an immediate need to solve the problem today.
+
+2. Decision-Maker Profile
+   
+- Who do you actually speak to on calls?
+- What's their title, department, reporting structure? 
+- What tech do they typically need to have in place? Shopify, HubSpot, whatever it may be?
+
+**How it proves best fit:** It proves **authority and technical compatibility**.
+
+- Reaching the verified title and reporting level ensures the prospect has actual buying authority and direct ownership over the problem, avoiding conversations with gatekeepers who cannot make financial decisions.
+    
+- Matching the exact tech stack proves the solution will integrate with their current workflow rather than creating technical blockers that stall closed-won deals

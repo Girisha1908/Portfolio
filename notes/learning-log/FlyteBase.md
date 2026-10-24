@@ -19,11 +19,14 @@
     
 - **How it proves an enterprise is a best fit:**
     
-    - **Hiring Triggers:** Job posts mentioning keywords like "FAA Part 107," "BVLOS" (Beyond Visual Line of Sight), "UAS Program," "Robotics Operations," or "Remote Sensing". This proves budget is already allocated for aerial programs.
+    - **Hiring Triggers:** 
+	      1. Job posts mentioning keywords like "FAA Part 107," "BVLOS" (Beyond Visual Line of Sight), "UAS Program," "Robotics Operations," or "Remote Sensing". This proves budget is already allocated for aerial programs.
         
-    - **Expansion / Perimeter Changes:** Physical site expansions, facility modernization grants, port automation initiatives, or critical infrastructure security mandates.
+	- **Expansion / Perimeter Changes:** 
+		  Physical site expansions, facility modernization grants, port automation initiatives, or critical infrastructure security mandates.
         
-    - **Adverse Incidents:** Security breaches at perimeter fencing, regulatory fines for delayed pipeline/flare inspection, or worker safety hazards in hazardous zones.
+	- **Adverse Incidents:** 
+		  Security breaches at perimeter fencing, regulatory fines for delayed pipeline/flare inspection, or worker safety hazards in hazardous zones.
         
     - These signals prove **timing and active budget urgency**, transforming a cold account into an urgent demand scenario.
         
