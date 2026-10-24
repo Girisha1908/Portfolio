@@ -104,4 +104,10 @@ ICP means the **detailed definition of a company** and the **exact persona withi
 
 1. identify Buying Signals
 
-	try to gauge what situation your client is facing when they come to buy your product
+	try to gauge what situation your client is facing when they come to buy your product.
+	
+- **What it is:** Internal triggering events, such as active hiring, headcount reduction, or recent funding rounds.
+    
+- **How it proves best fit:** It provides proof of **active urgency and timing**. Many companies fit demographic criteria on paper but are in maintenance mode and will not buy.
+  
+  Identifying these signals proves the prospect is facing the specific  friction that forces budget allocation and creates an immediate need to solve the problem today.
