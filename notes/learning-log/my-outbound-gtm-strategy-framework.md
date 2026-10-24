@@ -92,17 +92,17 @@ ideal customer profile is not an e-commerce brand or SaaS company- those are mar
 
 ICP means the **detailed definition of a company** and the **exact persona within that company** who is willing to buy your product and become a best customer.
 
-##### Traits of a best customer(5 ESSENTIALS)
+### Traits of a best customer(5 ESSENTIALS)
 
-1. know what team structure do they have?
+#### 1. know what team structure do they have?
    
 	What's the ideal team structure that makes them most likely to be YOUR good client and more likely to show buying signals.
 	
-	**How it proves best fit:** It provides proof of **operational capacity and need**. If an organization does not have the departments or team size required to implement, manage, or derive ROI from your solution.
+**How it proves best fit:** It provides proof of **operational capacity and need**. If an organization does not have the departments or team size required to implement, manage, or derive ROI from your solution.
 	
-	They cannot succeed with your offer. Matching this structure proves they have the exact internal infrastructure capable of adopting and using your product.
+they cannot succeed with your offer. Matching this structure proves they have the exact internal infrastructure capable of adopting and using your product.
 
-1. identify Buying Signals
+#### 2. identify Buying Signals
 
 	try to gauge what situation your client is facing when they come to buy your product.
 	
@@ -115,7 +115,7 @@ ICP means the **detailed definition of a company** and the **exact persona withi
   
   Identifying these signals proves the prospect is facing the specific friction that forces budget allocation and creates an immediate need to solve the problem today.
 
-2. Decision-Maker Profile
+#### 2. Decision-Maker Profile
    
 - Who do you actually speak to on calls?
 - What's their title, department, reporting structure? 
@@ -126,3 +126,5 @@ ICP means the **detailed definition of a company** and the **exact persona withi
 - Reaching the verified title and reporting level ensures the prospect has actual buying authority and direct ownership over the problem, avoiding conversations with gatekeepers who cannot make financial decisions.
     
 - Matching the exact tech stack proves the solution will integrate with their current workflow rather than creating technical blockers that stall closed-won deals
+
+#### Common pain points
