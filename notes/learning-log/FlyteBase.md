@@ -68,3 +68,20 @@
     - You then use lookalike tools (like [Ocean](https://ocean.io) or [Apify](https://apify.com)) to map every twin enterprise across the region.
         
     - Matching the exact lookalike profile of an already successful implementation proves technical viability, simplifies compliance hurdles (e.g., shared regulatory frameworks like BVLOS waivers), and provides immediate, industry-adjacent social proof.
+
+-------------------------------------------
+
+### The Complete Strategy
+
+```
+[Anchor Client Analysis]
+  ├─ 1. Team Structure   ──► Map required field/inspection ops
+  ├─ 2. Buying Signals   ──► Trigger: Drone job listings / BVLOS waivers / expansion
+  ├─ 3. Decision-Maker   ──► Identify tool owners (DJI/Skydio/GIS) & KPI owners
+  ├─ 4. Pain Points      ──► Segment into Security, Inspection, or Safety PQS
+  └─ 5. Case Study Match ──► Lookalike site modeling (Ports, Energy, Mines)
+           │
+           ▼
+[Qualified Enterprise + Exact Champion Identified]
+```
+
