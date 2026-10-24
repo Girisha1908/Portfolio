@@ -96,7 +96,7 @@ ICP means the **detailed definition of a company** and the **exact persona withi
 
 1. know what team structure do they have?
    
-	What's the ideal team structure that makes them most likely to be a good client and more likely to show buying signals.
+	What's the ideal team structure that makes them most likely to be YOUR good client and more likely to show buying signals.
 	
 	**How it proves best fit:** It provides proof of **operational capacity and need**. If an organization does not have the departments or team size required to implement, manage, or derive ROI from your solution.
 	
@@ -104,4 +104,4 @@ ICP means the **detailed definition of a company** and the **exact persona withi
 
 1. identify Buying Signals
 
-	
+	try to gauge what situation your client is facing when they come to buy your product
