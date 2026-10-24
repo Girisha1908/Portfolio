@@ -15,6 +15,19 @@
   
 ## 2. Buying Signals & Company Situation
 
+
+summary-
+First, the team. prospect companies need security patrols, inspection crews, field operations units. If a mine or a port has none of that in-house, nobody’s there to run the docks.so that won't be our best fit
+
+Second, a reason to buy now. A job post that mentions BVLOS, UAS or remote sensing. A site expansion, or a new security rule. Or something going wrong, like a break-in at the fence or a fine for a late inspection. Enterprise deals are slow, so I want companies that are already moving.
+
+Third, the person. we know that the buyer's title varies wildly, so I look at what h/w or s/w buyer already uses. if you already run DJI docks or Milestone cameras. and you are a contact actively managing these specific tools. this proves operational ownership.
+
+And fourth, the pain.A Head of Security and a Mining Operations Manager look at a drone dock through completely different lenses A security head wants faster response and fewer guard patrols. An operations manager wants fewer people climbing flare stacks. So the message follows their pain.
+
+--------------------------------------------------------------------------
+
+
 - **Why it is needed for FlytBase:** Enterprise deals have long sales cycles. You cannot pitch autonomous robotics if the company is not actively experiencing an operational shift, incident, or technological mandate.
     
 - **How it proves an enterprise is a best fit:**
