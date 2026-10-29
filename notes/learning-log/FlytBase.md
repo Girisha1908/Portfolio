@@ -47,6 +47,7 @@
 
 **ICP definition**
 
+Start from an official list and import it as company names or domains. Good lists: the EIA-861 utility list, the ENTSO-E member list, the PHMSA operator list, the EIA refinery list, and the MSHA mine dataset.
 ### ICP #1: Grid operators (in your Chapter 1 format)
 
 1. **Team structure:** A field operations team, an asset inspection crew, a physical security unit, and ideally an aviation, drone or innovation team. Without people on the ground, nobody can run the docks.
@@ -54,3 +55,5 @@
 3. **Decision-maker profile:** No fixed title. You find them by what they’re measured on: the drone lead (aviation or innovation), the budget owner (grid operations or asset management), and the security owner (physical security). Using DJI docks or Milestone cameras confirms they own the work.
 4. **Common pain points:** Paying crews to drive out just to look, slow eyes-on when an alarm goes off at a remote substation, and being stuck at one or two docks with no way to scale.
 5. **Past client lookalikes:** Statnett and Xcel Energy. Both are large, with hundreds of unmanned sites, long power lines and an existing drone program. So look for companies with more than 1,000 staff, many substations, and a drone signal.
+
+**$1.47B (Fortune Business Insights)**

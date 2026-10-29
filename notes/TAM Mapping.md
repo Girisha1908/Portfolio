@@ -46,15 +46,15 @@
 
 ## Market Size Context (Facts vs. Estimates)
 
-|Item|Number|Type|
-|---|---|---|
-|Global drone-in-a-box market 2025|$1.42B (Straits Research), $1.47B (Fortune Business Insights), $1.78B (The Business Research Company); one outlier report says $6.06B (Market Research Future)|Fact (published reports; they disagree)|
-|Growth rate|~19.7–20% CAGR (Straits, Fortune BI, TBRC)|Fact (reports)|
-|North America share|40.3% (Straits) to 41.79% (Fortune BI)|Fact (reports)|
-|Software share of DiaB spend|Not published; I assume 20–30% → ~$0.3–0.5B in 2025|**Estimate**|
-|FlytBase Pro plan|$99/month or $999/year, unlimited docks and users|Fact (FlytBase, April 2025)|
-|FlytBase Enterprise|~$4,000 per dock per year (reseller lists ~$3,999–4,499); AI add-on ~$9,999; integrations ~$2,499/yr|From earlier research; **not re-verified**|
-|Skydio dock base|1,070 X10 Docks deployed as of July 2026 (Skydio)|Fact (vendor claim)|
+| Item                              | Number                                                                                                                                                         | Type                                       |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Global drone-in-a-box market 2025 | $1.42B (Straits Research), $1.47B (Fortune Business Insights), $1.78B (The Business Research Company); one outlier report says $6.06B (Market Research Future) | Fact (published reports; they disagree)    |
+| Growth rate                       | ~19.7–20% CAGR (Straits, Fortune BI, TBRC)                                                                                                                     | Fact (reports)                             |
+| North America share               | 40.3% (Straits) to 41.79% (Fortune BI)                                                                                                                         | Fact (reports)                             |
+| Software share of DiaB spend      | Not published; I assume $1.47B (Fortune Business Insights)in 2025                                                                                              | **Estimate**                               |
+| FlytBase Pro plan                 | $99/month or $999/year, unlimited docks and users                                                                                                              | Fact (FlytBase, April 2025)                |
+| FlytBase Enterprise               | ~$4,000 per dock per year (reseller lists ~$3,999–4,499); AI add-on ~$9,999; integrations ~$2,499/yr                                                           | From earlier research; **not re-verified** |
+| Skydio dock base                  | 1,070 X10 Docks deployed as of July 2026 (Skydio)                                                                                                              | Fact (vendor claim)                        |
 
 **What this means:** The market is real but still small, and it is growing fast, about 20% a year. Market reports disagree a lot, so don't quote one number as "the truth." For planning, a better way to size the market is bottom-up: count the sites, then multiply by docks and price. That is what this report does.
 
