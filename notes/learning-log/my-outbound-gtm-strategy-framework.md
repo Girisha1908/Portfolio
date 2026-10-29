@@ -88,13 +88,12 @@ To understand how the market perceives your product it's done by asking 3 crucia
 
 ## Chapter 2-A: ICP Definition
 
- pick one segment, then write its ICP with these five traits, then name 3 decision-maker personas, then group them by shared pain (PQS).
- 
- ![[Pasted image 20261029141618.png]]
+
+ICP means the **detailed definition of a company** and the **exact persona within that company** who is willing to buy your product and become a best customer.
 
 ideal customer profile is not an e-commerce brand or SaaS company- those are markets. 
 
-ICP means the **detailed definition of a company** and the **exact persona within that company** who is willing to buy your product and become a best customer.
+ pick one segment, then write its ICP with these five traits, then name 3 decision-maker personas, then group them by shared pain (PQS).
 
 #### Traits of a best customer (5 ESSENTIALS)
 
@@ -137,7 +136,7 @@ they cannot succeed with your offer. Matching this structure proves they have th
 
 All of this ICP data becomes the scoring criteria for list building. We use each of these data points as qualification filters when we build lead lists in Clay.
 
-
+ideal customer profile is not an e-commerce brand or SaaS company- those are markets. 
 ### Chapter 2-B: TAM Mapping
 
 It is the process of uncovering every viable industry segment and identifying total no. of qualified companies and contacts available

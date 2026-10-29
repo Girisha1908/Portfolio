@@ -10,32 +10,32 @@
 
 ## Plain-English Glossary
 
-|Term|What it means (simple)|
-|---|---|
-|**TAM / SAM / SOM**|TAM = everyone who could ever buy. SAM = the part you can actually serve, given your product, regions and rules. SOM = the part you can realistically win soon.|
-|**NAICS code**|A 6-digit government code for "what industry a business is in" (North American Industry Classification System, 2022 version). Example: 221121 = electric transmission. Data tools use it to filter companies.|
-|**Drone-in-a-box (DiaB) / dock**|A weatherproof box that a drone lives in. The drone takes off on its own, flies a mission, lands, and recharges. No pilot needs to be on site.|
-|**BVLOS**|"Beyond Visual Line of Sight." The drone flies farther than a person on the ground can see. Docks only pay off when BVLOS is allowed.|
-|**VLOS**|Visual Line of Sight. The pilot or an observer must see the drone.|
-|**Part 107 / Part 108**|US FAA drone rules. Part 107 is today's rule; BVLOS needs a waiver. Part 108 is the proposed rule that would make BVLOS routine. It is not law yet.|
-|**OIRA**|The White House office that reviews big rules before they are published.|
-|**FCC Covered List**|A US list of equipment that can't get _new_ radio approval. All foreign-made drones were added in Dec 2025. Drones already approved can still be used.|
-|**ROC (Remote Operations Center)**|One control room that runs many docks in many places.|
-|**TSO / DSO**|TSO = Transmission System Operator: runs the high-voltage "highways" of the grid (e.g., Statnett). DSO = Distribution System Operator: runs the local "streets" of the grid down to homes.|
-|**IOU / Co-op / Public power**|US utility types. IOU = investor-owned (big, stock-listed). Co-op = owned by its customers. Public power = city- or state-owned.|
-|**Substation**|A fenced yard of transformers and switches that changes voltage. There are about 55,000 in the US. Most have no staff on site.|
-|**CAGR**|Compound Annual Growth Rate: the average yearly growth rate. A 20% CAGR means the market grows about 20% each year.|
-|**ACV / ARR**|ACV = Annual Contract Value (what one customer pays per year). ARR = Annual Recurring Revenue (total yearly subscription revenue).|
-|**NERC CIP**|Mandatory North American grid security rules. CIP-014 covers physical security of key substations; other CIP standards cover cybersecurity.|
-|**PHMSA**|US agency that regulates pipeline safety.|
-|**LDAR / OGI**|Leak Detection and Repair / Optical Gas Imaging: methane-leak checks, often with special cameras.|
-|**DFR**|Drone as First Responder: a police or fire drone that flies to a 911 call before officers arrive.|
-|**VMS / SCADA**|VMS = video management software for CCTV (e.g., Genetec, Milestone). SCADA = the control system that runs industrial equipment.|
-|**ISPS / MTSA**|Port and ship security rules (global / US).|
-|**ATEX**|EU rules for explosive-atmosphere zones, like refineries.|
-|**Enrichment**|Using tools such as Apollo to add emails and phone numbers to a list of names.|
-|**ICP**|Ideal Customer Profile: a description of your best-fit customer.|
-|**Pareto (80/20)**|The idea that a few things (about 20%) drive most of the results (about 80%).|
+| Term                               | What it means (simple)                                                                                                                                                                                        |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **TAM / SAM / SOM**                | TAM = everyone who could ever buy. SAM = the part you can actually serve, given your product, regions and rules. SOM = the part you can realistically win soon.                                               |
+| **NAICS code**                     | A 6-digit government code for "what industry a business is in" (North American Industry Classification System, 2022 version). Example: 221121 = electric transmission. Data tools use it to filter companies. |
+| **Drone-in-a-box (DiaB) / dock**   | A weatherproof box that a drone lives in. The drone takes off on its own, flies a mission, lands, and recharges. No pilot needs to be on site.                                                                |
+| **BVLOS**                          | "Beyond Visual Line of Sight." The drone flies farther than a person on the ground can see. Docks only pay off when BVLOS is allowed.                                                                         |
+| **VLOS**                           | Visual Line of Sight. The pilot or an observer must see the drone.                                                                                                                                            |
+| **Part 107 / Part 108**            | US FAA drone rules. Part 107 is today's rule; BVLOS needs a waiver. Part 108 is the proposed rule that would make BVLOS routine. It is not law yet.                                                           |
+| **OIRA**                           | The White House office that reviews big rules before they are published.                                                                                                                                      |
+| **FCC Covered List**               | A US list of equipment that can't get _new_ radio approval. All foreign-made drones were added in Dec 2025. Drones already approved can still be used.                                                        |
+| **ROC (Remote Operations Center)** | One control room that runs many docks in many places.                                                                                                                                                         |
+| **TSO / DSO**                      | TSO = Transmission System Operator: runs the high-voltage "highways" of the grid (e.g., Statnett). DSO = Distribution System Operator: runs the local "streets" of the grid down to homes.                    |
+| **IOU / Co-op / Public power**     | US utility types. IOU = investor-owned (big, stock-listed). Co-op = owned by its customers. Public power = city- or state-owned.                                                                              |
+| **Substation**                     | A fenced yard of transformers and switches that changes voltage. There are about 55,000 in the US. Most have no staff on site.                                                                                |
+| **CAGR**                           | Compound Annual Growth Rate: the average yearly growth rate. A 20% CAGR means the market grows about 20% each year.                                                                                           |
+| **ACV / ARR**                      | ACV = Annual Contract Value (what one customer pays per year). ARR = Annual Recurring Revenue (total yearly subscription revenue).                                                                            |
+| **NERC CIP**                       | Mandatory North American grid security rules. CIP-014 covers physical security of key substations; other CIP standards cover cybersecurity.                                                                   |
+| **PHMSA**                          | US agency that regulates pipeline safety.                                                                                                                                                                     |
+| **LDAR / OGI**                     | Leak Detection and Repair / Optical Gas Imaging: methane-leak checks, often with special cameras.                                                                                                             |
+| **DFR**                            | Drone as First Responder: a police or fire drone that flies to a 911 call before officers arrive.                                                                                                             |
+| **VMS / SCADA**                    | VMS = video management software for CCTV (e.g., Genetec, Milestone). SCADA = the control system that runs industrial equipment.                                                                               |
+| **ISPS / MTSA**                    | Port and ship security rules (global / US).                                                                                                                                                                   |
+| **ATEX**                           | EU rules for explosive-atmosphere zones, like refineries.                                                                                                                                                     |
+| **Enrichment**                     | Using tools such as Apollo to add emails and phone numbers to a list of names.                                                                                                                                |
+| **ICP**                            | Ideal Customer Profile: a description of your best-fit customer.                                                                                                                                              |
+| **Pareto (80/20)**                 | The idea that a few things (about 20%) drive most of the results (about 80%).                                                                                                                                 |
 
 ## How to Use NAICS Codes for List Building (Beginner Guide)
 
@@ -232,14 +232,14 @@ Ties are broken by deal value.
 
 ### 7. Mining
 
-|Topic|Details|
-|---|---|
-|**Pain points**|Huge open pits. Stockpile surveys. Blast checks. Theft. Tailings dam safety.|
-|**What they use now**|Survey teams with manual drones, guards, fixed cameras.|
-|**Buying triggers**|Expansion. Safety incidents. Automation programs (one FlytBase mining customer links docks to Caterpillar MineStar to inspect haul trucks and plans 7 docks in year one).|
-|**KPIs**|Survey turnaround time. Staff time in hazardous zones. Stockpile accuracy.|
-|**Compliance**|MSHA (US) and national mining regulators. Blast zones.|
-|**Tech maturity**|High at top miners.|
+| Topic                 | Details                                                                                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pain points**       | Huge open pits. Stockpile surveys. Blast checks. Theft. Tailings dam safety.                                                                                              |
+| **What they use now** | Survey teams with manual drones, guards, fixed cameras.                                                                                                                   |
+| **Buying triggers**   | Expansion. Safety incidents. Automation programs (one FlytBase mining customer links docks to Caterpillar MineStar to inspect haul trucks and plans 7 docks in year one). |
+| **KPIs**              | Survey turnaround time. Staff time in hazardous zones. Stockpile accuracy.                                                                                                |
+| **Compliance**        | MSHA (US) and national mining regulators. Blast zones.                                                                                                                    |
+| **Tech maturity**     | High at top miners.                                                                                                                                                       |
 
 ### 8. Police / Public Safety
 
