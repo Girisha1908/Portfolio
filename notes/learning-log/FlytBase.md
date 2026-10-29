@@ -11,7 +11,7 @@
     4. **Technology stack:** It works with any brand of hardware, though mostly DJI docks. It connects to CCTV software (Genetec, Milestone), mapping tools and SCADA, and can run in the cloud or on the customer's own servers.
 2. **Market landscape**
     
-    1. **TAM, SAM, SOM:** Drone-in-a-box is a $1.4–1.5B market growing about 20% a year. The software slice FlytBase can serve is roughly $300–500M (my estimate). The near-term SOM is a few thousand energy, mining and security accounts.
+    1. **TAM, SAM, SOM:** Drone-in-a-box is a $1.4–1.5B market growing about 20% a year. The software slice FlytBase can serve is roughly $300–500M (my estimate)-20-30% of tam. The near-term SOM is a few thousand energy, mining and security accounts.
     2. **Tapped vs untapped:** Energy, mining and security companies are already customers. Ports, data centres and US police are mostly untouched, either because there's no proof yet or because rivals dominate.
     3. **Buyer journey:** A company starts with manual drones, pilots one or two docks, gets flying permits, then hits the "scale to every site" moment. That last step is where FlytBase wins.
     4. **Seasonality and regulation:** Budgets get set in Q3–Q4, and storm and wildfire seasons raise urgency. The pending US BVLOS rule (Part 108) and the US block on new foreign drones decide how fast the US can buy.
@@ -56,4 +56,3 @@ Start from an official list and import it as company names or domains. Good list
 4. **Common pain points:** Paying crews to drive out just to look, slow eyes-on when an alarm goes off at a remote substation, and being stuck at one or two docks with no way to scale.
 5. **Past client lookalikes:** Statnett and Xcel Energy. Both are large, with hundreds of unmanned sites, long power lines and an existing drone program. So look for companies with more than 1,000 staff, many substations, and a drone signal.
 
-**$1.47B (Fortune Business Insights)**

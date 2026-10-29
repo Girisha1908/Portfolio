@@ -139,4 +139,4 @@ ideal customer profile is not an e-commerce brand or SaaS company- those are mar
 
 It is the process of uncovering every viable industry segment and identifying total no. of qualified companies and contacts available.
 
-1. 
+1. industry segmentation-()
